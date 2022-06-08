@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <style>
+      :root {
+        --danger-color: #d61919;
+        --white-color: #fff;
+        --cyan-color: rgb(16, 176, 182);
+        --light-black-color: #555;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        
+        font-family: cursive;
+        color: var(--white-color);
+        background-color: var(--light-black-color);
+      }
+
+      .header {
+        background-color: var(--light-black-color);
+      }
+
+      .container {
+        width: 350px;
+        margin: 0 auto;
+        padding: 0 30px;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-transform {
+        text-transform: uppercase;
+      }
+
+      .header h1 {
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        font-size: 24px;
+      }
+
+      .section-1 {
+        background-color: var(--light-black-color);
+        padding-top: 150px;
+        height: 300px;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+        /* height: 100%; */
+       
+        
+      }
+
+      .red {
+       background-color: var(--danger-color);
+      flex-basis: 130px;
+       text-align: left;
+       padding: 15px 20px;
+       padding-left: 5px;
+      
+      }
+
+      .cyan {
+        background-color: var(--cyan-color);
+        flex-basis: 130px;
+        text-align: right;
+       padding: 15px 20px;
+       padding-left: 5px; 
+     
+      }
+
+      .border-1 {
+        border-radius: 20px 0 0 20px;
+      }
+
+      .border-2 {
+        border-radius: 0 20px 20px 0;
+      }
+
+      .score {
+        background-color: var(--light-black-color);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .grid .flex {
+        align-items: center;
+      }
+
+      .size {
+        font-size: 3rem;
+      }
+
+      .margin {
+        margin-top: 20px;
+      }
+
+      .sec {
+        position: relative;
+      }
+
+      .para {
+        position: absolute;
+        top: 500px;
+        left: 30px;
+      }
+
+      
+      
+
+      
+
+      /* .card {
+        background-color: var(--white-color);
+        border-radius: 20px;
+        padding: 40px;
+      } */
+    </style>
+  </head>
+  <body>
+    <header class="header  text-transform">
+      <div class="container">
+        <h1 class="text-center">Match Results</h1>
+        <p class="text-center">Classic Match</p>
+      </header>
+    </div>
+
+    <section class="section-1 text-center">
+      <div class=" container flex card height">
+          <div class="red border-1">Home</div>
+          <div class="cyan border-2
+          ">Away</div>
+      </div>
+
+        <div class="grid margin ">
+          <div class="flex">
+
+            <h3>Player1</h3>
+            <i class="fa fa-user fa-4x"></i>
+          </div>
+          <div>
+
+            <h3 class="size">0-2</h3>
+          </div>
+          
+          <div class="flex">
+            <i class="fa fa-pencil fa-4x"></i>
+            <h3>Legendary AI </h3>
+          </div>
+        </div>
+    </section>
+
+    <section class="sec">
+      <div>
+        <p class="para text-transform">x advance</p>
+      </div>
+    </section>
+
+  </body>
+</html>
